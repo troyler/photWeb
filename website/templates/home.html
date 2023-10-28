@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block Home %}
+ <!-- Require -->
+    <div class="grid grid-cols-5 grid-rows-10 gap-4 p-4">
+        <div class="block col-span-3"><img class = "p-3 sm:w-32w md:w-64w lg:w-120" src="{{ url_for('static', filename ='/images/horiz1.jpg') }}" alt="Horizontal Image"></div>
+        <div class="block row-start-6 col-span-3"> <img class="row-start-4 p-10 " src="{{ url_for('static', filename ='/images/vert1.jpg') }}" alt="Vertical Image"></div>
+       
+
+        <div class="block row-start-6 col-span-3"><img class = "" src="{{ url_for('static', filename ='/images/horiz1.jpg') }}" alt="Horizontal Image"></div>
+
+        
+        
+        <!-- Add more images as needed -->
+    </div>
+
+    <div class="block p-8 col-span-3"><img class = "p-3 sm:w-32w md:w-64w lg:w-120" src="{{ url_for('static', filename ='/images/horiz1.jpg') }}" alt="Horizontal Image"></div>
+
+    <div class="grid grid-cols-5 grid-rows-10 gap-4 p-4">
+        <div class="block row-start-6 col-span-3"><img class = "p-3 sm:w-32w md:w-64w lg:w-120" src="{{ url_for('static', filename ='/images/horiz1.jpg') }}" alt="Horizontal Image"></div>
+        <div class="block col-span-3"> <img class="row-start-4 p-10 " src="{{ url_for('static', filename ='/images/vert1.jpg') }}" alt="Vertical Image"></div>
+    
+        <div class="block row-start-2 col-start-3 col-span-3"><img class = "" src="{{ url_for('static', filename ='/images/horiz1.jpg') }}" alt="Horizontal Image"></div>
+        <!-- Add more images as needed -->
+    </div>
+
+{% endblock%}
